@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         // 'primary-clr': '#ff5500',
         'primary-clr': '#79155B',
-        'light-gray': '#5e6475',
+        'light-gray': '#474747',
         'dark-gray': '#272829',
       },
     },

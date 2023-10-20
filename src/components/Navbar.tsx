@@ -3,7 +3,7 @@ import Button from './Button/Button'
 
 function Navbar() {
   return (
-    <nav className="flex justify-between p-10 px-16 items-center border border-b-2 shadow-sm">
+    <nav className="flex justify-between p-10 px-16 items-center border border-b-2 shadow-sm mb-6">
       <Image
         src="./assets/logo/transparent.svg"
         alt="cyntronex-logo"
@@ -17,7 +17,7 @@ function Navbar() {
           <li>About</li>
           <li>Our Work</li>
         </ul>
-        <Button />
+        <Button>Reach out to us</Button>
       </div>
     </nav>
   )
