@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Navbar />
       <PageWrapper>
-        <div className="flex items-stretch space-x-6">
+        <div className="flex flex-wrap lg:flex-nowrap space-x-0 lg:space-x-6">
           <CardWrapper
             styles={{
               padding: '3rem',
@@ -38,7 +38,7 @@ export default function Home() {
           </CardWrapper>
 
           {/* card sections */}
-          <div className="grid-4_4">
+          <div className="grid-4_4 mt-6 lg:mt-0">
             {home.headerSubSection.map((data, index) => {
               return (
                 <div className={`hs-card-${index}`} key={index}>

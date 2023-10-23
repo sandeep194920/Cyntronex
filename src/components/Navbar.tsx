@@ -10,7 +10,7 @@ function Navbar() {
         width={200}
         height={200}
       />
-      <div className="flex space-x-14 items-center">
+      <div className="hidden lg:visible lg:flex space-x-14 items-center">
         <ul className="flex space-x-14 text-light-gray">
           <li>Programs</li>
           <li>Services</li>
@@ -18,6 +18,11 @@ function Navbar() {
           <li>Our Work</li>
         </ul>
         <Button>Reach out to us</Button>
+      </div>
+      <div className="visible lg:hidden group cursor-pointer">
+        <div className="w-6 h-0.5 bg-primary-clr my-1 transition-all duration-300 group-hover:h-1"></div>
+        <div className="w-6 h-0.5 bg-primary-clr my-1 transition-all duration-300 group-hover:h-1"></div>
+        <div className="w-6 h-0.5 bg-primary-clr my-1 transition-all duration-300 group-hover:h-1"></div>
       </div>
     </nav>
   )

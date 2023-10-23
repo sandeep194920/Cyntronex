@@ -1,6 +1,7 @@
 import { LuSettings2 } from 'react-icons/lu'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { TbShip } from 'react-icons/tb'
+import { GiSwissArmyKnife } from 'react-icons/gi'
 
 export const data = {
   homePage: {
@@ -35,7 +36,7 @@ export const data = {
         heading: 'Aerospace & Defence',
         description:
           'Providing safe, controlled and reliable engineering for Aerospace and Defence projects.',
-        icon: <LuSettings2 />,
+        icon: <GiSwissArmyKnife />,
       },
     ],
   },
