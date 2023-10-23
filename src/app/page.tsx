@@ -1,37 +1,31 @@
 import Button from '@/components/Button/Button'
+import CardWithIcon from '@/components/Card/CardWithIcon'
 import CardWrapper from '@/components/Card/CardWrapper'
 import Navbar from '@/components/Navbar'
 import PageWrapper from '@/components/PageWrapper'
-import { H1, H2 } from '@/components/Text/Heading'
+import { H1 } from '@/components/Text/Heading'
 import Paragraph from '@/components/Text/Paragraph'
 import { data } from '@/data/data'
 
 export default function Home() {
   const { homePage: home } = data
-  const subCardStyles = {
-    padding: '1.7rem',
-    minHeight: '18rem',
-  }
+
   return (
     <>
       <Navbar />
-
       <PageWrapper>
-        {/* <div className="flex space-x-11"> */}
-        {/* header */}
-        <div className="header-container">
-          <div className="header-card">
-            <CardWrapper
-              styles={{
-                padding: '3rem',
-                // maxWidth: '40rem',
-                // backgroundImage: `url('/assets/bg.png')`,
-                // backgroundPosition: 'center',
-                // backgroundSize: 'cover',
-              }}
-            >
+        <div className="flex items-stretch space-x-6">
+          <CardWrapper
+            styles={{
+              padding: '3rem',
+              // backgroundImage: `url('/assets/bg.png')`,
+              // backgroundPosition: 'center',
+              // backgroundSize: 'cover',
+            }}
+          >
+            <div className="flex flex-col justify-end h-full">
               <H1>
-                <div className="text-primary-clr w-[73%] mb-6 pt-36">
+                <div className="text-primary-clr w-[73%]">
                   {home.headerSection.heading}
                 </div>
               </H1>
@@ -40,52 +34,18 @@ export default function Home() {
                 {home.headerSection.description[1]}
               </Paragraph>
               <Button>{home.headerSection.buttonText}</Button>
-            </CardWrapper>
-          </div>
+            </div>
+          </CardWrapper>
 
           {/* card sections */}
-
-          <div className="hs-card-0">
-            <CardWrapper styles={{ ...subCardStyles }}>
-              <H2>
-                <div className="text-primary-clr mb-4">
-                  {home.headerSubSection[0].heading}
+          <div className="grid-4_4">
+            {home.headerSubSection.map((data, index) => {
+              return (
+                <div className={`hs-card-${index}`} key={index}>
+                  <CardWithIcon {...data} />
                 </div>
-              </H2>
-              <Paragraph>{home.headerSubSection[0].description}</Paragraph>
-            </CardWrapper>
-          </div>
-
-          <div className="hs-card-1">
-            <CardWrapper styles={{ ...subCardStyles }}>
-              <H2>
-                <div className="text-primary-clr mb-4">
-                  {home.headerSubSection[1].heading}
-                </div>
-              </H2>
-              <Paragraph>{home.headerSubSection[1].description}</Paragraph>
-            </CardWrapper>
-          </div>
-
-          <div className="hs-card-2">
-            <CardWrapper styles={{ ...subCardStyles }}>
-              <H2>
-                <div className="text-primary-clr mb-4">
-                  {home.headerSubSection[2].heading}
-                </div>
-              </H2>
-              <Paragraph>{home.headerSubSection[2].description}</Paragraph>
-            </CardWrapper>
-          </div>
-          <div className="hs-card-3">
-            <CardWrapper styles={{ ...subCardStyles }}>
-              <H2>
-                <div className="text-primary-clr mb-4">
-                  {home.headerSubSection[3].heading}
-                </div>
-              </H2>
-              <Paragraph>{home.headerSubSection[3].description}</Paragraph>
-            </CardWrapper>
+              )
+            })}
           </div>
         </div>
       </PageWrapper>

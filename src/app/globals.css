@@ -27,12 +27,12 @@ body {
 }
 
 /* header section - grid container */
-
+/* 
 .header-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  row-gap: 4rem;
+  gap: 1.2rem;
+  row-gap: 1.2rem;
   max-height: 45rem;
 }
 .header-card {
@@ -55,4 +55,10 @@ body {
 .hs-card-3 {
   grid-column: 4/5;
   grid-row: 2/3;
+} */
+
+.grid-4_4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }

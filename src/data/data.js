@@ -1,3 +1,7 @@
+import { LuSettings2 } from 'react-icons/lu'
+import { BsArrowRightCircle } from 'react-icons/bs'
+import { TbShip } from 'react-icons/tb'
+
 export const data = {
   homePage: {
     headerSection: {
@@ -13,21 +17,25 @@ export const data = {
         heading: 'Product Development',
         description:
           'Everything you need to get your product development done quickly, creatively, and on budget.',
+        icon: <LuSettings2 />,
       },
       {
         heading: 'Industry 4.0 & Robotics',
         description:
           'Integrating traditional manufacturing and industrial platforms and practices with the latest smart technology.',
+        icon: <BsArrowRightCircle />,
       },
       {
         heading: 'Industrial & Marine',
         description:
           'Helping you develop reliable engineering solutions for harsh environment offshore operations.',
+        icon: <TbShip />,
       },
       {
         heading: 'Aerospace & Defence',
         description:
           'Providing safe, controlled and reliable engineering for Aerospace and Defence projects.',
+        icon: <LuSettings2 />,
       },
     ],
   },

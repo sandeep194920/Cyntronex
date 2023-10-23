@@ -7,3 +7,8 @@ export interface WrapperProps {
 export interface WrapperWithStyles extends WrapperProps {
   styles?: {}
 }
+export interface CardWithIcon {
+  heading: string
+  description: string
+  icon?: ReactNode
+}
