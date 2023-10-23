@@ -62,25 +62,14 @@ export default function Home() {
           >
             <div className="flex flex-col">
               <H2>
-                <div className="text-primary-clr w-[73%]">Cyntronex</div>
+                <div className="text-primary-clr w-[73%]">
+                  {home.aboutSection.heading}
+                </div>
               </H2>
               <Paragraph styles={{ padding: '1.5rem 0' }}>
-                Enginuity is Canada's dynamic engineering and design group,
-                we're on a mission to make a profound impact. From a basement
-                operation to a powerhouse team of over 50 innovative experts, we
-                tackle complex technical challenges, delivering tailor-made
-                solutions that enhance the world. Driven by curiosity, we place
-                your challenges at the heart of our operations. Through our
-                unique matrix managed, focussed team structure, we strategically
-                apply our expertise to ensure outstanding results. We manage the
-                inherent risks of research and development by thoroughly
-                examining your idea from idea, through concept and prototyping
-                to fabrication. If the necessary technologies don't exist, we
-                design them; if we lack expertise, we source it. With us, you're
-                not just procuring an engineering group; you're gaining a
-                committed partner in innovation.
+                {home.aboutSection.description}
               </Paragraph>
-              <Button>{home.headerSection.buttonText}</Button>
+              <Button>{home.aboutSection.buttonText}</Button>
             </div>
           </CardWrapper>
 
