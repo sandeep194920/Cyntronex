@@ -11,7 +11,7 @@ function Navbar() {
         height={200}
       />
       <div className="hidden lg:visible lg:flex space-x-14 items-center">
-        <ul className="flex space-x-14 text-light-gray">
+        <ul className="flex space-x-14 text-black-text">
           <li>Programs</li>
           <li>Services</li>
           <li>About</li>
