@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 
 export interface WrapperProps {
   children: ReactNode
+  styles?: {}
 }
 
 export interface WrapperWithStyles extends WrapperProps {
