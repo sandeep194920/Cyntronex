@@ -12,9 +12,9 @@ function Navbar() {
       />
       <div className="hidden lg:visible lg:flex space-x-14 items-center">
         <ul className="flex space-x-14 text-black-text">
-          <li>Programs</li>
-          <li>Services</li>
           <li>About</li>
+          <li>Products</li>
+          <li>Services</li>
           <li>Our Work</li>
         </ul>
         <Button>Reach out to us</Button>

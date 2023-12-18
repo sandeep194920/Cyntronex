@@ -17,11 +17,19 @@ function Header() {
           commitment to providing high-quality solutions to our clients. Our
           team brings a wealth of experience in the technology and design
           industry, which has allowed us to build a reputation for excellence
-          and reliability. At Cyntronex, we excel in product design with core
-          competencies in mechanical design, mechanical engineering, materials
-          science, manufacturing process optimization, and simulation analysis.
-          Our team`&apos;`s expertise ensures efficient, compliant, and
-          innovative solutions for your product design needs.
+          and reliability.
+        </Paragraph>
+        <Paragraph
+          styles={{
+            lineHeight: '1.8rem',
+            color: 'var(--dark-gray)',
+          }}
+        >
+          At Cyntronex, we excel in product design with core competencies in
+          mechanical design, mechanical engineering, materials science,
+          manufacturing process optimization, and simulation analysis. Our
+          team`&apos;`s expertise ensures efficient, compliant, and innovative
+          solutions for your product design needs.
         </Paragraph>
         <Button>Learn more</Button>
       </div>
