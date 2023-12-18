@@ -3,21 +3,16 @@ import { H1, H2, H3 } from './Text/Heading'
 import Image from 'next/image'
 import Paragraph from './Text/Paragraph'
 import Button from './Button/Button'
+import { data } from '@/data/data'
 
 function Header() {
+  const { header } = data
   return (
-    <div className="flex py-10 justify-between space-x-10">
+    <div className="flex py-10 justify-between space-x-10 pb-[8rem]">
       <div className="flex flex-col flex-grow space-y-6">
-        <H1 styles={{ color: 'var(--light-gray)' }}>
-          Welcome to Cyntronex, <br></br> Where Ideas Take Shape and Innovations
-          Comes to Life
-        </H1>
+        <H1 styles={{ color: 'var(--light-gray)' }}>{header.heading}</H1>
         <Paragraph styles={{ lineHeight: '1.8rem', color: 'var(--dark-gray)' }}>
-          Cyntronex is a dynamic and forward-thinking company with a strong
-          commitment to providing high-quality solutions to our clients. Our
-          team brings a wealth of experience in the technology and design
-          industry, which has allowed us to build a reputation for excellence
-          and reliability.
+          {header.tagLine[0]}
         </Paragraph>
         <Paragraph
           styles={{
@@ -25,11 +20,7 @@ function Header() {
             color: 'var(--dark-gray)',
           }}
         >
-          At Cyntronex, we excel in product design with core competencies in
-          mechanical design, mechanical engineering, materials science,
-          manufacturing process optimization, and simulation analysis. Our
-          team`&apos;`s expertise ensures efficient, compliant, and innovative
-          solutions for your product design needs.
+          {header.tagLine[1]}
         </Paragraph>
         <Button>Learn more</Button>
       </div>

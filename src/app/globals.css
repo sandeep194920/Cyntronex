@@ -12,7 +12,7 @@
   --black-text: #343434;
   --bg-gray: #ebebeb;
   --light-gray: #474747;
-  --dark-gray: #222324;
+  --dark-gray: #272829;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -7,17 +7,16 @@ import Wrapper from '@/components/Wrapper'
 import { H1, H2 } from '@/components/Text/Heading'
 import Paragraph from '@/components/Text/Paragraph'
 import { data } from '@/data/data'
+import FeatureCards from '@/components/FeatureCards'
 
 export default function Home() {
-  const { homePage: home } = data
-
   return (
     <>
       <Navbar />
-
       <Wrapper styles={{ background: 'var(--bg-gray)' }}>
         <Header />
       </Wrapper>
+      <FeatureCards />
     </>
   )
 }
