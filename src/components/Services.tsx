@@ -1,9 +1,9 @@
 import React from 'react'
-import CardWithIcon from './Card/CardWithIcon'
 import { data } from '@/data/data'
 import { H2, H3, H4, H6 } from './Text/Heading'
 import Wrapper from './Wrapper'
 import Paragraph from './Text/Paragraph'
+import Image from 'next/image'
 
 function Services() {
   const {
@@ -13,9 +13,20 @@ function Services() {
   const servicesJsx = services.map((service, index) => {
     return (
       <>
-        <H3 styles={{ textAlign: 'center' }} key={index}>
-          {service.title}
-        </H3>
+        <div className=" flex items-center space-x-3">
+          <Image src={service.img} width={50} height={50} alt="img" />
+          <H3
+            styles={{
+              marginTop: '2rem',
+              marginBottom: '2rem',
+              color: 'var(--primary-clr)',
+              textTransform: 'uppercase',
+            }}
+            key={index}
+          >
+            {service.title}
+          </H3>
+        </div>
         <Paragraph styles={{ color: 'var( --black-text)', fontSize: '1.1rem' }}>
           {service.desc}
         </Paragraph>

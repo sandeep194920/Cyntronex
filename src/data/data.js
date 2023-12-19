@@ -1,8 +1,3 @@
-import { LuSettings2 } from 'react-icons/lu'
-import { BsArrowRightCircle } from 'react-icons/bs'
-import { TbShip } from 'react-icons/tb'
-import { GiSwissArmyKnife } from 'react-icons/gi'
-
 export const data = {
   header: {
     heading: `Welcome to [brand], 
@@ -96,6 +91,7 @@ export const data = {
     services: [
       {
         title: 'Product design',
+        img: '/assets/design.png',
         desc: 'Explore our comprehensive product design services that bring innovation to life:',
         categories: [
           {
@@ -148,6 +144,7 @@ export const data = {
       },
       {
         title: 'Manufacturing',
+        img: '/assets/engineering.png',
         desc: 'Discover our comprehensive manufacturing services designed to meet your needs:',
         categories: [
           {
@@ -194,6 +191,7 @@ export const data = {
       },
       {
         title: 'Advanced Engineering and Automation',
+        img: '/assets/mechanical.png',
         desc: 'Explore our cutting-edge services that redefine the standards of engineering excellence and automation:',
         categories: [
           {

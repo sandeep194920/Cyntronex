@@ -7,7 +7,7 @@ function Button({ children, styles }: WrapperWithStyles) {
     <Link href="#">
       <div
         style={{ ...styles }}
-        className="px-5 py-2 rounded-md text-white bg-primary-clr w-fit hover:bg-primary-clr-light1"
+        className="px-5 py-2 rounded-md text-white bg-primary-clr w-fit hover:bg-primary-clr-light1 cursor-pointer"
       >
         {children}
       </div>
