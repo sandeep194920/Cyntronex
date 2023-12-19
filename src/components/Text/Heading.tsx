@@ -1,14 +1,28 @@
 import { WrapperProps } from '@/utils/Interfaces'
 
-export function H1({ children, styles }: WrapperProps) {
-  return (
-    <h1
-      style={{ ...styles }}
-      className="font-bold text-4xl md:text-5xl leading-normal md:leading-normal" // leading-normal - this is a bug
-    >
-      {children}
-    </h1>
-  )
+export function H1({
+  children,
+  styles,
+  dangerouslySetInnerHTML,
+}: WrapperProps) {
+  if (dangerouslySetInnerHTML) {
+    return (
+      <h1
+        className="font-bold text-4xl md:text-5xl leading-normal md:leading-normal"
+        style={{ ...styles }}
+        dangerouslySetInnerHTML={dangerouslySetInnerHTML}
+      />
+    )
+  } else {
+    return (
+      <h1
+        className="font-bold text-4xl md:text-5xl leading-normal md:leading-normal"
+        style={{ ...styles }}
+      >
+        {children}
+      </h1>
+    )
+  }
 }
 
 export function H2({ children, styles }: WrapperProps) {

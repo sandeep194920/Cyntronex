@@ -5,9 +5,9 @@ import { GiSwissArmyKnife } from 'react-icons/gi'
 
 export const data = {
   header: {
-    heading: `Welcome to Cyntronex, 
-    Where Ideas Take Shape and Innovations
-    Comes to Life`,
+    heading: `Welcome to [brand], 
+    where ideas take shape and innovations
+    come to life`,
     tagLine: [
       `Cyntronex is a dynamic and forward-thinking company with a strong
     commitment to providing high-quality solutions to our clients. Our

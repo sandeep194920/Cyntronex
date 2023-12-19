@@ -7,10 +7,20 @@ import { data } from '@/data/data'
 
 function Header() {
   const { header } = data
+  const brandName = 'Cyntronex'
+  const dynamicHeading = header.heading.replace(
+    '[brand]',
+    `<span style="color: var(--primary-clr)">${brandName}</span>`
+  )
+
   return (
     <div className="flex py-10 justify-between space-x-10 pb-[8rem]">
       <div className="flex flex-col flex-grow space-y-6">
-        <H1 styles={{ color: 'var(--light-gray2)' }}>{header.heading}</H1>
+        <H1
+          styles={{ color: 'var(--light-gray2)', maxWidth: '90%' }}
+          dangerouslySetInnerHTML={{ __html: dynamicHeading }}
+        />
+
         <Paragraph>{header.tagLine[0]}</Paragraph>
         <Paragraph
           styles={{
@@ -22,12 +32,12 @@ function Header() {
         </Paragraph>
         <Button>Learn more</Button>
       </div>
-      <div className="lg:flex hidden flex-shrink-0 w-[50%] h-[50%] min-w-[20rem]">
+      <div className="lg:flex hidden flex-shrink-0 w-[50%] min-w-[20rem]">
         <Image
           src="/assets/hero_img.jpg"
           alt="hero-img"
           width={900}
-          height={700}
+          height={900}
         />
       </div>
     </div>
