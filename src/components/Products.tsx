@@ -1,9 +1,8 @@
 import React from 'react'
-import { H2, H3 } from './Heading'
-import Paragraph from './Paragraph'
-import Button from '../Button/Button'
+import { H2, H3 } from './Text/Heading'
+import Paragraph from './Text/Paragraph'
 import Image from 'next/image'
-import Wrapper from '../Wrapper'
+import Wrapper from './Wrapper'
 import { data } from '@/data/data'
 
 function Products() {
