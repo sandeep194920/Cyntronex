@@ -20,6 +20,7 @@ const config: Config = {
         'black-text': 'var(--black-text)',
         'bg-gray': 'var(--bg-gray)',
         'light-gray': 'var(--light-gray)',
+        'light-gray2': 'var(--light-gray2)',
         'dark-gray': 'var(--dark-gray)',
       },
     },

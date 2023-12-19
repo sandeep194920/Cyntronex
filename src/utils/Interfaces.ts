@@ -11,6 +11,5 @@ export interface WrapperWithStyles extends WrapperProps {
 export interface CardWithIcon {
   heading: string
   description: string | Array<string>
-  icon?: ReactNode
   image: string
 }

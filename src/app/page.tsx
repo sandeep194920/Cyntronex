@@ -8,6 +8,7 @@ import { H1, H2 } from '@/components/Text/Heading'
 import Paragraph from '@/components/Text/Paragraph'
 import { data } from '@/data/data'
 import FeatureCards from '@/components/FeatureCards'
+import Products from '@/components/Text/Products'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
       </Wrapper>
       <FeatureCards />
+      <Products />
     </>
   )
 }

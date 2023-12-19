@@ -10,10 +10,8 @@ function Header() {
   return (
     <div className="flex py-10 justify-between space-x-10 pb-[8rem]">
       <div className="flex flex-col flex-grow space-y-6">
-        <H1 styles={{ color: 'var(--light-gray)' }}>{header.heading}</H1>
-        <Paragraph styles={{ lineHeight: '1.8rem', color: 'var(--dark-gray)' }}>
-          {header.tagLine[0]}
-        </Paragraph>
+        <H1 styles={{ color: 'var(--light-gray2)' }}>{header.heading}</H1>
+        <Paragraph>{header.tagLine[0]}</Paragraph>
         <Paragraph
           styles={{
             lineHeight: '1.8rem',

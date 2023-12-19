@@ -7,7 +7,7 @@ import { GiBulletBill } from 'react-icons/gi'
 import Image from 'next/image'
 
 function CardWithIcon({ ...props }: CardWithIconInterface) {
-  const { heading, description, icon, image } = props
+  const { heading, description, image } = props
 
   let desc
   if (typeof description === 'string') {
@@ -33,12 +33,8 @@ function CardWithIcon({ ...props }: CardWithIconInterface) {
         maxWidth: '25rem',
       }}
     >
-      {icon && (
-        // <div className="text-5xl flex justify-center my-3 text-primary-clr">
-        //   {icon}
-        // </div>
-        <Image src={image} width={50} height={50} alt="img" />
-      )}
+      <Image src={image} width={50} height={50} alt="img" />
+
       <H4>
         <div className="text-primary-clr my-3">{heading}</div>
       </H4>
