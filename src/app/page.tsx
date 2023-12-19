@@ -5,6 +5,7 @@ import FeatureCards from '@/components/FeatureCards'
 import Products from '@/components/Products'
 import Services from '@/components/Services'
 import Footer from '@/components/Footer'
+import { scroller } from 'react-scroll'
 
 export default function Home() {
   return (

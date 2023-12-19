@@ -4,9 +4,14 @@ import Image from 'next/image'
 import Button from './Button/Button'
 import { useState } from 'react'
 import Menu from './Menu'
+import { data } from '@/data/data'
+import { handleScroll } from '@/utils/scrollUtil'
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
+  const {
+    header: { navLinks },
+  } = data
   return (
     <nav className="flex justify-between p-10 px-16 items-center border border-b-2 shadow-sm">
       <Image
@@ -17,10 +22,22 @@ function Navbar() {
       />
       <div className="hidden lg:visible lg:flex space-x-14 items-center">
         <ul className="flex space-x-14 text-black-text">
-          <li className="cursor-pointer">About</li>
+          {/* <li className="cursor-pointer">About</li>
           <li className="cursor-pointer">Products</li>
           <li className="cursor-pointer">Services</li>
-          <li className="cursor-pointer">Our Work</li>
+          <li className="cursor-pointer">Our Work</li> */}
+
+          {navLinks.slice(0, navLinks.length - 1).map((navLink) => {
+            return (
+              <li
+                className="cursor-pointer border-transparent hover: border-b hover:border-primary-clr-light1"
+                onClick={() => handleScroll(navLink.link)}
+                key={navLink.name}
+              >
+                {navLink.name}
+              </li>
+            )
+          })}
         </ul>
         <Button>Reach out to us</Button>
       </div>

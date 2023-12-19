@@ -12,7 +12,7 @@ function Services() {
 
   const servicesJsx = services.map((service, index) => {
     return (
-      <>
+      <section id="services" key={index}>
         <div className=" flex items-center space-x-3">
           <Image src={service.img} width={50} height={50} alt="img" />
           <H3
@@ -22,7 +22,6 @@ function Services() {
               color: 'var(--primary-clr)',
               textTransform: 'uppercase',
             }}
-            key={index}
           >
             {service.title}
           </H3>
@@ -45,7 +44,7 @@ function Services() {
             )
           })}
         </div>
-      </>
+      </section>
     )
   })
 

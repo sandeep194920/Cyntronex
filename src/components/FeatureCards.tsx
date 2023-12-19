@@ -9,7 +9,7 @@ function FeatureCards() {
   } = data
 
   return (
-    <>
+    <section id="features">
       <H2>{title}</H2>
       <div className="flex w-[80%] mx-auto my-10 flex-wrap lg:justify-between gap-8 justify-center">
         {features.map((card, index) => {
@@ -24,7 +24,7 @@ function FeatureCards() {
           )
         })}
       </div>
-    </>
+    </section>
   )
 }
 

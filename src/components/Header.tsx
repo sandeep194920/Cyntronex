@@ -14,7 +14,10 @@ function Header() {
   )
 
   return (
-    <div className="flex py-10 justify-between space-x-10 pb-[8rem]">
+    <section
+      className="flex py-10 justify-between space-x-10 pb-[8rem]"
+      id="about"
+    >
       <div className="flex flex-col flex-grow space-y-6">
         <H1
           styles={{ color: 'var(--light-gray2)', maxWidth: '90%' }}
@@ -40,7 +43,7 @@ function Header() {
           height={900}
         />
       </div>
-    </div>
+    </section>
   )
 }
 

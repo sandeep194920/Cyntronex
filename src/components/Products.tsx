@@ -10,7 +10,7 @@ function Products() {
     productsOffered: { title, products },
   } = data
   return (
-    <>
+    <section id="products">
       <H2>{title}</H2>
       <Wrapper>
         {products.map((product, index) => {
@@ -37,7 +37,7 @@ function Products() {
           )
         })}
       </Wrapper>
-    </>
+    </section>
   )
 }
 

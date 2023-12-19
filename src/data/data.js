@@ -18,19 +18,19 @@ export const data = {
     navLinks: [
       {
         name: 'About',
-        link: '',
+        link: 'about',
       },
       {
         name: 'Products',
-        link: '',
+        link: 'products',
       },
       {
         name: 'Services',
-        link: '',
+        link: 'services',
       },
       {
         name: 'Our Work',
-        link: '',
+        link: 'features',
       },
       {
         name: 'Reach out to us',
