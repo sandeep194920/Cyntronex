@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Wrapper from '@/components/Wrapper'
 import FeatureCards from '@/components/FeatureCards'
 import Products from '@/components/Products'
+import Services from '@/components/Services'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Wrapper>
       <FeatureCards />
       <Products />
+      <Services />
     </>
   )
 }

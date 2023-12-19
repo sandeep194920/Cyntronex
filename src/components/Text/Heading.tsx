@@ -54,7 +54,7 @@ export function H5({ children, styles }: WrapperProps) {
 
 export function H6({ children, styles }: WrapperProps) {
   return (
-    <h6 style={{ ...styles }} className="font-semibold text-md leading-normal">
+    <h6 style={{ ...styles }} className="font-bold uppercase text-md leading-9">
       {children}
     </h6>
   )

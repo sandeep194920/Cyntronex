@@ -9,7 +9,7 @@
   --primary-clr: #f16645;
   --primary-clr-light1: #f27559;
   --primary-clr-light2: '#f4856b';
-  --black-text: #343434;
+  --black-text: #151515;
   --bg-gray: #ebebeb;
   --light-gray: #f8f9fa;
   --light-gray2: #474747;
@@ -32,4 +32,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }

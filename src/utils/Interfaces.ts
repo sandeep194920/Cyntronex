@@ -12,4 +12,5 @@ export interface CardWithIcon {
   heading: string
   description: string | Array<string>
   image: string
+  styles: object
 }
