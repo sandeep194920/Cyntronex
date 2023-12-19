@@ -15,6 +15,28 @@ export const data = {
     team's expertise ensures efficient, compliant, and innovative
     solutions for your product design needs.`,
     ],
+    navLinks: [
+      {
+        name: 'About',
+        link: '',
+      },
+      {
+        name: 'Products',
+        link: '',
+      },
+      {
+        name: 'Services',
+        link: '',
+      },
+      {
+        name: 'Our Work',
+        link: '',
+      },
+      {
+        name: 'Reach out to us',
+        link: '',
+      },
+    ],
   },
 
   featureCards: {

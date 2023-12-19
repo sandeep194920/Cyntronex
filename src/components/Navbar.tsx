@@ -1,7 +1,12 @@
+'use client'
+
 import Image from 'next/image'
 import Button from './Button/Button'
+import { useState } from 'react'
+import Menu from './Menu'
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false)
   return (
     <nav className="flex justify-between p-10 px-16 items-center border border-b-2 shadow-sm">
       <Image
@@ -19,10 +24,15 @@ function Navbar() {
         </ul>
         <Button>Reach out to us</Button>
       </div>
-      <div className="visible lg:hidden group cursor-pointer">
+      <div
+        onMouseOver={() => setShowMenu(true)}
+        onMouseLeave={() => setShowMenu(false)}
+        className="visible lg:hidden group cursor-pointer relative"
+      >
         <div className="w-6 h-0.5 bg-primary-clr my-1 transition-all duration-300 group-hover:h-1"></div>
         <div className="w-6 h-0.5 bg-primary-clr my-1 transition-all duration-300 group-hover:h-1"></div>
         <div className="w-6 h-0.5 bg-primary-clr my-1 transition-all duration-300 group-hover:h-1"></div>
+        {showMenu && <Menu />}
       </div>
     </nav>
   )
