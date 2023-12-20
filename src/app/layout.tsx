@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
 import { data } from '@/data/data'
-import Head from 'next/head'
 
 const roboto = Roboto({
   weight: '400',
