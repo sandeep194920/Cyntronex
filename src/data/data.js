@@ -34,11 +34,10 @@ export const data = {
       },
       {
         name: 'Reach out to us',
-        link: '',
+        link: 'contact',
       },
     ],
   },
-
   featureCards: {
     title: 'Strategic Engineering Nexus',
     features: [
@@ -87,7 +86,6 @@ export const data = {
       },
     ],
   },
-
   productsOffered: {
     title: 'Products we offer',
     products: [
@@ -106,7 +104,6 @@ export const data = {
       },
     ],
   },
-
   servicesOffered: {
     title: 'Services we offer',
 
@@ -260,4 +257,9 @@ export const data = {
       },
     ],
   },
+  email_template: [
+    'Thank you for reaching out to us through our website. We appreciate your interest and will review your email as soon as possible. We aim to respond within 24 hours.',
+    'Regards,',
+    'Cyntronex team',
+  ],
 }
