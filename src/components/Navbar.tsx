@@ -39,7 +39,7 @@ function Navbar() {
             )
           })}
         </ul>
-        <Button>Reach out to us</Button>
+        <Button onClick={() => handleScroll('contact')}>Reach out to us</Button>
       </div>
       <div
         onMouseOver={() => setShowMenu(true)}
